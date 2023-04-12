@@ -13,9 +13,9 @@
 #export DEFAULT_PAGE='workshop'
 
 # Flags to explicitly enable/disable specific components
-#ENABLE_CONSOLE='false'
+ENABLE_CONSOLE='true'
 #ENABLE_DASHBOARD='false'
 #ENABLE_SLIDES='false'
-#ENABLE_TERMINAL='false'
+ENABLE_TERMINAL='false'
 #ENABLE_WEBDAV='false'
-#ENABLE_WORKSHOP='true'
+ENABLE_WORKSHOP='true'
