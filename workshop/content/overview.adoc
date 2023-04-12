@@ -28,7 +28,7 @@ As a side-effect of the `.`, any character will match the `.` in the variable na
 
 == Intro
 
-In this workshop, you will... to be completed by the workshop developer.
+In this workshop, you will learn and explor Red Hat OpenShift Data Science using a real life AI/ML baesd edge use case.
 The following content is an example of what to include in an overview.
 
 === Lab Access

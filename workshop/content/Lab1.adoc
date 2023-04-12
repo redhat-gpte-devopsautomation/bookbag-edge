@@ -1,0 +1,240 @@
+== Edge Anomaly Detection - Workshop Instructions
+
+Table of Contents
+
+* link:#logging-into-rhods[Log into RHODS]
+* link:#git-clone-the-edge-anomaly-detection-project[Git Clone the Edge
+Anomaly Detection Project]
+* link:#run-anomaly-detection-notebook[Run the Anomaly Detection
+notebook]
+* link:#select-slice[Package the application]
+* link:#stream-sensor-data[View Application via browser]
+
+=== Log into RHODS
+
+[arabic]
+. Go to the
+https://console-openshift-console.apps.ieee.8goc.p1.openshiftapps.com/[OpenShift
+console] and click on *WorkshopAttendees* and log in with your
+credentials.
++
+image:/workshop/images/workshop_attendees.png[/workshop/images/workshop_attendees]
+. Upon successful login, you will see the Red Hat OpenShift Dedicated
+environment. This is a kubernetes platform from which you can create
+containerized applications. Part of this environment is the Red Hat
+OpenShift Data Science platform. It is accessed by *clicking* the
+*launcher* icon in the upper right corner.
++
+image:/workshop/images/RedHatOpenShiftDashboard.png[/workshop/images/RedHatOpenShiftDashboard]
+. Upon clicking the *Launcher Icon* you will see another login screen.
+Click the *Log in with OpenShift* icon.
++
+image:/workshop/images/loginwithopenshift.png[/workshop/images/loginwithopenshift]
+. Click on *WorkshopAttendees* and log in with your credentials.
++
+image:/workshop/images/workshop_attendees.png[/workshop/images/workshop_attendees]
+. Click on *Allow selected permissions* to authorize access.
++
+image:/workshop/images/authorize_access.png[/workshop/images/authorize_access]
+. Once in the RHODS dashboard, click on the *Launch Application*
+hyperlink in the JupyterHub tile.
++
+image:/workshop/images/redhatopenshiftdatascienceplatform.png[/workshop/images/redhatopenshiftdatascienceplatform]
+. Again, click on *WorkshopAttendees* and log in with your credentials
+and click on *Allow selected permissions*
++
+image:/workshop/images/workshop_attendees.png[/workshop/images/workshop_attendees]
+. When you first gain access to JupyterHub, a configuration screen gives
+you the opportunity to select a notebook image and configure the
+deployment size and environment variables for your data science project.
++
+image:/workshop/images/Notebookserveroptions.png[/workshop/images/Notebookserveroptions]
+. Choose *Tensorflow* Notebook image, *Small* Container size. You will
+not be entering *Environment Variables*. Once you have chosen these
+options click the *Start Server* button. Once the server starts you will
+be taken into a Jupyter Hub IDE (Integrated Development Environment). It
+is in this environment that we can look at our sensor data and determine
+how to visualize and detect anomalies.
+. Welcome to Jupyter Lab! After starting your server, three sections
+appear in JupyterLab’s launcher window: Notebook, Console and Other. On
+the left side of the navigation paine, locate the explorer panel. This
+panel is where you can create and manager your project directories.
+
+image:/workshop/images/JupyterNotebookIDE.png[/workshop/images/JupyterNotebookIDE]
+
+[arabic, start=12]
+. To start working we are going to clone the Edge Anomaly Detection
+project from github.
+
+=== Git Clone the Edge Anomaly Detection Project
+
+[arabic]
+. Click on the Git icon on the left of your JupyterHub notebook.
+. Click on the *Clone a Repository* button.
++
+image:/workshop/images/git_clone.png[/workshop/images/git_clone]
+. Paste the following URL and click *Clone*.
++
+....
+https://github.com/Enterprise-Neurosystem/edge-anomaly-detection.git
+....
+. After you have cloned your repository, it will appear as a `directory'
+under the *Name* pane.
++
+image:/workshop/images/namePane.png[/workshop/images/namePane]
+
+=== Run the Anomaly Detection Notebook
+
+[arabic]
+. Now that we’ve cloned the project, let’s take a look at some anomaly
+data. Open the notebook named `notebooks\AnomalyDetectionNotebook.ipynb`
+from the File Explorer tab.
++
+image:/workshop/images/AnomalyDetectionNotebook.png[/workshop/images/AnomalyDetectionNotebook]
+. The data we will be using (casing1.csv) has 2 columns timestamp and
+pressure. This data has already been refactored. If you wish to look at
+the non-refactored data, open file static/data/casing_NotRefactored.csv.
+The dataset is from a gas pump that is slowly failing overtime. Let’s
+plot this data to see what it looks like. Can we see an anomaly in the
+visible data? Run Cells 1-3
++
+image:/workshop/images/plotCasingPressurePoints.png[/workshop/images/plotCasingPressurePoints]
+. We can see from the above plot that the pressure decreases over time
+and towards the end we observe some pressure points that have extremely
+high values. This could be an anomaly but how do we quantify these
+points? What we can do is perform a linear regression. From the linear
+regression we can take the percent difference from the regression line
+and plot that line over our points. Any lines extending beyond a certain
+distance from our points we can then label as `an anomaly'
+. Run the remainder of the notebook cells. We will produce a new plot
+which will show linear regression and a green line showing the percent
+difference from the regression line. When this line is over a certain
+percentage away from the average linear regression we color it red, to
+signify that it is an anomaly. To view our new plot, open
+notebooks/anomaly2.png
++
+image:/workshop/images/anomaly2.png[/workshop/images/anomaly2]
+
+=== Creating a Web UI for our algorithm.
+
+[arabic]
+. We have created a Web UI in which users can choose which dataset they
+wish to view anomalies for. The Web UI consists of an HTML page in which
+users can select different options for plotting such as: Data Source,
+Regression Group Size, STD Threshold, Plot Scrolling Size, Points per
+Second.
++
+image:/workshop/images/AnomalyDetectionOptions.png[/workshop/images/AnomalyDetectionOptions]
+. There are 3 sections within the Web UI: Data Source, Plot Parameters
+and Actions
+. Data Source - currently you can choose the default casing1.csv which
+we have prepared.
+. Plot Parameters include: Regression Group Size, STD Threshold, Plot
+Scrolling Size and Points per Second.
+. {blank}
++
+....
+ Regression Group Size - number of points used in the calculation of a regression line
+....
+. {blank}
++
+....
+ STD Threshold - How many standard deviations, from the regression line, do you wish to set before anything above that threshold is listed as an anomaly
+....
+. {blank}
++
+....
+ Plot Scrolling Size - how many points are plotted in the plot 'window' at any one time
+....
+. {blank}
++
+....
+ Points per Second - how many pressure points are plotted per second
+....
+. Actions include: Start Plot and Stop Plot
+. {blank}
++
+....
+Start Plot - will start the plotting of the plot
+....
+. {blank}
++
+....
+Stop Plot - will stop the plotting of the plot
+....
+
+image:/workshop/images/AnomalyDetectionWebUI.png[/workshop/images/AnomalyDetectionWebUI]
+
+[arabic, start=12]
+. The Web UI uses an HTML FORM which upon `submit' posts its options to
+plot.js which in turn uses services to plot the graph. In this workshop
+we will not go into detail as to how we set up the services, templates
+and static scripts. Let’s go ahead and containerize this application and
+deploy it on OpenShift.
+
+=== Packaging the Anomaly Detection Web Application
+
+[arabic]
+. Now that the application code is working, you’re ready to package it
+as a container image and run it directly in OpenShift as a web
+application.
+. We will build the web application inside OpenShift. You can access the
+OpenShift Dedicated dashboard from the application switcher in the top
+bar of the RHODS dashboard.
++
+image:/workshop/images/LauncherIcon.png[/workshop/images/LauncherIcon]
+. Open your OpenShift UI and switch to the developer view from the menu
+on the top left:
++
+image:/workshop/images/Switch2DeveloperView.png[/workshop/images/Switch2DeveloperView]
+. Make sure you are in the project that was assigned to you:
++
+image:/workshop/images/UserProject1.png[/workshop/images/UserProject1]
+. From the +Add menu, click the From Git option:
++
+image:/workshop/images/addGitRepo.png[/workshop/images/addGitRepo]
+. In the Git Repo URL field, enter
++
+....
+https://github.com/Enterprise-Neurosystem/edge-anomaly-detection.git
+....
++
+image:/workshop/images/ImportFromGit.png[/workshop/images/ImportFromGit]
+. Next, change the BUILDER PYTHON to Python 3.8 (UBI7). Click Edit
+Import Strategy, then select 3.8 - ubi7 from the drop down list.
++
+image:/workshop/images/ImportStrategy.png[/workshop/images/ImportStrategy]
+. If you continue to scroll down, you will see that everything is
+automatically selected to create a deployment of your application, as
+well as a route through which you will be able to access it.
+. Make certain to name your app. For example: edge-anomaly-detection
++
+image:/workshop/images/GeneralOptionsCreateContainer.png[/workshop/images/GeneralOptionsCreateContainer]
+. Now we are ready to press the `Create' button to create our
+containerized application.
+. The automated build process will take a few minutes. Some alerts may
+appear if OpenShift tries to deploy the application while the build is
+still running, but that’s OK. Then OpenShift will deploy the application
+(rollout), and in the topology view, you should obtain a screen similar
+to the following screen capture.
+
+image:/workshop/images/TopologyView.png[/workshop/images/TopologyView]
+
+[arabic, start=12]
+. We are now ready to view the Anomaly Detection application in a
+Browser.
+
+=== View Application via Browser
+
+[arabic]
+. To view your containerized application in a browser, click the URL
+icon in the topology view.
++
+image:/workshop/images/ClickURL.png[/workshop/images/ClickURL]
+. Your containerized Anomaly Detection application will now appear in a
+browser window. Try the various options (.e.g STD Threshold) that we
+discussed earlier.
++
+image:/workshop/images/AnomalyDetectionApplication.png[/workshop/images/AnomalyDetectionApplication]
+. You are now finished with this part of the workshop. Next, you will be
+looking at how we generate Synthetic Data.
