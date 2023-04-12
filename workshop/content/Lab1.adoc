@@ -22,9 +22,8 @@ notebook]
 === Log into RHODS
 
 [arabic]
-. Go to the
-{{ openshift_cluster_console_url }}/[OpenShift
-console] and log in with your credentials username: {{ openshift_cluster_admin_username }} and password: {{ openshift_cluster_admin_password }}.
+. Go to the %openshift_cluster_console_url%/[OpenShift
+console] and log in with your credentials username: %openshift_cluster_admin_username% and password: %openshift_cluster_admin_password%.
 +
 image:/workshop/images/workshop_attendees.png[/workshop/images/workshop_attendees]
 . Upon successful login, you will see the Red Hat OpenShift Dedicated
