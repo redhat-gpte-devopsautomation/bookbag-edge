@@ -4,10 +4,13 @@ modules:
     name: Overview
     exit_sign: Continue
   Lab1:
-    name: Lab 1
+    name: Lab 1 - Detection of Anomalies in Sensor Data
     exit_sign: Continue
   Lab2:
-    name: Lab 2
+    name: Lab 2 - Generate Synthetic Sensor Data
+    exit_sign: Continue
+  Lab3:
+    name: Lab 3 - Predicting Failure of Generic Sensors
     exit_sign: Continue
   review:
     name: Review

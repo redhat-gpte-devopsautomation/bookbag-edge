@@ -2,6 +2,6 @@
 
 == Review
 
-Hopefully you learned a few things in this lab:
+Hopefully you learned a few things in this lab.
 
 Thank you!
