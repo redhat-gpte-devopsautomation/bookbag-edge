@@ -13,7 +13,7 @@
 #export DEFAULT_PAGE='workshop'
 
 # Flags to explicitly enable/disable specific components
-ENABLE_CONSOLE='true'
+#ENABLE_CONSOLE='false'
 #ENABLE_DASHBOARD='false'
 #ENABLE_SLIDES='false'
 ENABLE_TERMINAL='true'
