@@ -1,12 +1,9 @@
-:guid: %guid%,
-:openshift_cluster_console_url: %openshift_cluster_console_url%,
-:openshift_cluster_admin_username: %openshift_cluster_admin_username%,
-:openshift_cluster_admin_password: %openshift_cluster_admin_password%,
-:ssh_command: "ssh lab-user@%bastion_public_hostname%",
-:ssh_password: %bastion_ssh_password%,
-:rhods_dashboard: %rhodh_dashboard%,
-:rhods_password: %rhodh_password%,
-:user: %openshift_cluster_user_base%,
+
+:openshift_cluster_console_url: %openshift_console_url%,
+:openshift_cluster_user_name: %user%
+:openshift_cluster_user_password: %password%
+
+
 == Edge Anomaly Detection - Workshop Instructions
 
 Table of Contents
@@ -22,8 +19,8 @@ notebook]
 === Log into RHODS
 
 [arabic]
-. Go to the %openshift_cluster_console_url%/[OpenShift
-console] and log in with your credentials username: %openshift_cluster_admin_username% and password: %openshift_cluster_admin_password%.
+. Go to the %openshift_console_url%/[OpenShift
+console] and log in with your credentials username: %user% and password: %password%.
 +
 image:/workshop/images/workshop_attendees.png[/workshop/images/workshop_attendees]
 . Upon successful login, you will see the Red Hat OpenShift Dedicated
