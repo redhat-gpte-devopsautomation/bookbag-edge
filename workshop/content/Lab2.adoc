@@ -1,3 +1,7 @@
+:openshift_cluster_console_url: %openshift_console_url%,
+:openshift_cluster_user_name: %user%
+:openshift_cluster_user_password: %password%
+
 == Generating Synthetic Sensor Data - Workshop Instructions
 
 Table of Contents
@@ -11,10 +15,8 @@ Edge Synthetic Generator Project]
 === Log into RHODS
 
 [arabic]
-. Go to the
-https://console-openshift-console.apps.ieee.d7se.p1.openshiftapps.com/[OpenShift
-console] and click on *WorkshopAttendees* and log in with your
-credentials.
+. Go to the %openshift_console_url%/[OpenShift
+console] and log in with your credentials username: %user% and password: %password%.
 +
 image:/workshop/images/workshop_attendees.png[/workshop/images/workshop_attendees]
 . Navigate Red Hat OpenShift Data Science (RHODS).

@@ -1,3 +1,7 @@
+:openshift_cluster_console_url: %openshift_console_url%,
+:openshift_cluster_user_name: %user%
+:openshift_cluster_user_password: %password%
+
 == Edge Anomaly Prediction - Workshop Instructions
 
 Table of Contents
