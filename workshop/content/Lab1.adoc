@@ -213,7 +213,9 @@ image:/workshop/images/ImportStrategy.png[/workshop/images/ImportStrategy]
 . If you continue to scroll down, you will see that everything is
 automatically selected to create a deployment of your application, as
 well as a route through which you will be able to access it.
-. Make certain to name your app. For example: edge-anomaly-detection
+. Make certain to name your app. 
+
+For example: edge-anomaly-detection
 +
 image:/workshop/images/GeneralOptionsCreateContainer.png[/workshop/images/GeneralOptionsCreateContainer]
 . Now we are ready to press the `Create' button to create our
