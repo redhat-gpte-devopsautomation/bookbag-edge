@@ -2,6 +2,7 @@
 :openshift_cluster_console_url: %openshift_cluster_console_url%,
 :openshift_cluster_admin_username: %openshift_cluster_admin_username%,
 :openshift_cluster_admin_password: %openshift_cluster_admin_password%,
+:openshift_cluster_ingress_domain: %openshift_apps%,
 :ssh_command: "ssh lab-user@%bastion_public_hostname%",
 :ssh_password: %bastion_ssh_password%,
 :rhods_dashboard: %rhodh_dashboard%,

@@ -1,8 +1,8 @@
 
 :openshift_cluster_console_url: %openshift_console_url%,
-:openshift_cluster_user_name: %user%
-:openshift_cluster_user_password: %password%
-:openshift_cluster_login_command: %login_command%
+:openshift_cluster_user_name: %user%,
+:openshift_cluster_user_password: %password%,
+:openshift_cluster_login_command: %login_command%,
 :openshift_cluster_ingress_domain: %openshift_apps%
 
 == Edge Anomaly Detection - Workshop Instructions
