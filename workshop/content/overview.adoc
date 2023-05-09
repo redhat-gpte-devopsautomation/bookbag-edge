@@ -11,32 +11,15 @@
 
 == Intro
 
-In this workshop, you will learn and explore Red Hat OpenShift Data Science using a real life AI/ML based edge use case.
-The following content is an example of what to include in an overview.
+In this workshop you will learn and explore Red Hat OpenShift Data Science (RHODS) using a real life AI/ML based edge use case.
 
 === Lab Access
 
-You can access your lab environment as with the following credentials:
+You can access your lab environment with the following credentials
 
 * user: `%user%`
-* password: `%password%` 
+* password: `%password%`
 
-OpenShift console:
+at the url below (OpenShift web console):
 
 %openshift_console_url%
-
-with the following command:
-
-[source,bash,options="nowrap",subs="{markup-in-source}"]
-----
-%ssh_command%
-----
-
-=== Workshop Information
-
-Informational messages generated for your workshop:
-
-[source,bash,options="nowrap"]
-----
-%user_info_messages%
-----
