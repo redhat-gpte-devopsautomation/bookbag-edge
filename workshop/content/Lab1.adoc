@@ -21,8 +21,8 @@ notebook]
 [arabic]
 . Go to the %openshift_console_url%/[OpenShift
 console] and log in with your credentials: 
-  - username: %user%
-  - password: %password%
+  * user: `%user%`
+  * password: `%password%`
 +
 . Upon successful login, you will see the Red Hat OpenShift Dedicated
 environment. This is a kubernetes platform from which you can create
@@ -203,6 +203,7 @@ image:/workshop/images/addGitRepo.png[/workshop/images/addGitRepo]
 ....
 https://github.com/Enterprise-Neurosystem/edge-anomaly-detection.git
 ....
+Insert `/src` into the Context dir field
 +
 image:/workshop/images/ImportFromGit.png[/workshop/images/ImportFromGit]
 . Next, change the BUILDER PYTHON to Python 3.8 (UBI7). Click Edit
