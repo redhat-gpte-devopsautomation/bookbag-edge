@@ -16,7 +16,12 @@ The following content is an example of what to include in an overview.
 
 === Lab Access
 
-You can access your lab environment as %user% with password %password% at the following url OpenShift console:
+You can access your lab environment as with the following credentials:
+
+user: `%user%`
+password: `%password%` 
+
+OpenShift console:
 
 %openshift_console_url%
 
