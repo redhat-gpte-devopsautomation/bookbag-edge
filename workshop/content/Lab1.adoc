@@ -20,7 +20,9 @@ notebook]
 
 [arabic]
 . Go to the %openshift_console_url%/[OpenShift
-console] and log in with your credentials username: %user% and password: %password%.
+console] and log in with your credentials: 
+  - username: %user%
+  - password: %password%
 +
 . Upon successful login, you will see the Red Hat OpenShift Dedicated
 environment. This is a kubernetes platform from which you can create
