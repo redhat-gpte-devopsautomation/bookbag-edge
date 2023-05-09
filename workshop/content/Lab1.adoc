@@ -203,7 +203,7 @@ image:/workshop/images/addGitRepo.png[/workshop/images/addGitRepo]
 ....
 https://github.com/Enterprise-Neurosystem/edge-anomaly-detection.git
 ....
-Insert `/src` into the Context dir field
+Show `Advanced Git options` and Insert `/src` into the `Context dir` field
 +
 image:/workshop/images/ImportFromGit.png[/workshop/images/ImportFromGit]
 . Next, change the BUILDER PYTHON to Python 3.8 (UBI7). Click Edit
