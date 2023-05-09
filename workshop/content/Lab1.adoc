@@ -239,7 +239,7 @@ Browser.
 . To view your containerized application in a browser, click the URL
 icon in the topology view.
 +
-Example: https://detect.%user%.%openshift_cluster_ingress_domain%
+Example: https://detect-%user%.%openshift_cluster_ingress_domain%
 +
 image:/workshop/images/ClickURL.png[/workshop/images/ClickURL]
 . Your containerized Anomaly Detection application will now appear in a
