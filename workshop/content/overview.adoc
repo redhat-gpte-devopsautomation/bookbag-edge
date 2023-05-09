@@ -18,8 +18,8 @@ The following content is an example of what to include in an overview.
 
 You can access your lab environment as with the following credentials:
 
-user: `%user%`
-password: `%password%` 
+* user: `%user%`
+* password: `%password%` 
 
 OpenShift console:
 
