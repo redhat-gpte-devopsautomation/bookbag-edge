@@ -214,7 +214,7 @@ image:/workshop/images/ImportStrategy.png[/workshop/images/ImportStrategy]
 automatically selected to create a deployment of your application, as
 well as a route through which you will be able to access it.
 . Make certain to name your app. 
-
++
 For example: `edge-anomaly-detection`
 +
 image:/workshop/images/GeneralOptionsCreateContainer.png[/workshop/images/GeneralOptionsCreateContainer]
