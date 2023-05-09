@@ -3,6 +3,7 @@
 :openshift_cluster_user_name: %user%
 :openshift_cluster_user_password: %password%
 :openshift_cluster_login_command: %login_command%
+:openshift_cluster_ingress_domain: %openshift_apps%
 
 == Edge Anomaly Detection - Workshop Instructions
 
@@ -215,7 +216,7 @@ automatically selected to create a deployment of your application, as
 well as a route through which you will be able to access it.
 . Make certain to name your app. 
 +
-For example: `edge-anomaly-detection`
+For example: `detect`
 +
 image:/workshop/images/GeneralOptionsCreateContainer.png[/workshop/images/GeneralOptionsCreateContainer]
 . Now we are ready to press the `Create' button to create our
@@ -237,6 +238,8 @@ Browser.
 [arabic]
 . To view your containerized application in a browser, click the URL
 icon in the topology view.
++
+Example: https://detect.%user%.%openshift_apps%
 +
 image:/workshop/images/ClickURL.png[/workshop/images/ClickURL]
 . Your containerized Anomaly Detection application will now appear in a
