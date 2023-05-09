@@ -20,6 +20,6 @@ You can access your lab environment with the following credentials
 * user: `%user%`
 * password: `%password%`
 
-at the url below (OpenShift web console):
+At the url below:
 
 %openshift_console_url%
