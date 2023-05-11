@@ -45,7 +45,7 @@ image:/workshop/images/jupyterhub_nb.png[/workshop/images/jupyterhub_nb]
 [arabic]
 . On the left side of the navigation pane, locate the explorer panel.
 This panel is where you can create and manage your project directories.
-Go into the root directory of your JupyterLab enviroment by locating
+Go into the root directory of your JupyterLab environment by locating
 clicking the Folder icon.
 +
 image:/workshop/images/directory.png[/workshop/images/directory]

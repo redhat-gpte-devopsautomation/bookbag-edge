@@ -14,12 +14,12 @@ Table of Contents
 Model]
 * link:#streaming-sensor-data[Streaming Sensor Data]
 
-=== Git Clone the Edge Synthetic Generator Project
+=== Git Clone Edge Anomaly Prediction
 
 [arabic]
 . On the left side of the navigation pane, locate the explorer panel.
 This panel is where you can create and manage your project directories.
-Go into the root directory of your JupyterLab enviroment by locating
+Go into the root directory of your JupyterLab environment by locating
 clicking the Folder icon.
 +
 image:/workshop/images/directory.png[/workshop/images/directory]
@@ -68,7 +68,7 @@ image:/workshop/images/start_data_prep.png[/workshop/images/start_data_prep]
 progress bar:
 +
 image:/workshop/images/data_prep_action.png[/workshop/images/data_prep_action]
-. Once data preparation is complete, you will recieve a message stating,
+. Once data preparation is complete, you will receive a message stating,
 *``Data is prepared. Ready to train''* and the *Train Model* tab will be
 enabled.
 +
@@ -85,8 +85,8 @@ image:/workshop/images/train_model.png[/workshop/images/train_model]
 . Click on the *Train Model* button to start training the model.
 +
 image:/workshop/images/train_model_btn.png[/workshop/images/train_model_btn]
-. When training is complete, you will recieve a message stating,
-*``Training is finsihed. Click on Display Loss Graph Btn''*. Click on
+. When training is complete, you will receive a message stating,
+*``Training is finished. Click on Display Loss Graph Btn''*. Click on
 the *Display Loss Graph* to view the observe the loss graph.
 +
 image:/workshop/images/training_is_finished.png[/workshop/images/training_is_finished]
