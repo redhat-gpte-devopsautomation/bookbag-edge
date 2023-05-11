@@ -1,7 +1,8 @@
 ---
 apiVersion: template.openshift.io/v1
 kind: Template
-message: Created ${NAME} DeploymentConfig, ServiceAccount, Role, Service, and Route
+message: |
+  Created ${NAME} DeploymentConfig, ServiceAccount, Role, Service, and Route
 
 metadata:
   annotations:
@@ -13,10 +14,10 @@ metadata:
 parameters:
   - name: NAME
     required: true
-    value: bookbag-demo
+    value: bookbag
   - name: IMAGE_STREAM_NAME
     required: true
-    value: bookbag-demo
+    value: bookbag
   - name: IMAGE_STREAM_NAMESPACE
   - name: IMAGE
     value: set-by-trigger

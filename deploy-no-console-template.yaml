@@ -2,7 +2,7 @@
 apiVersion: template.openshift.io/v1
 kind: Template
 message: |
-  Created ${NAME} Deployment, Service, and Route
+  Created ${NAME} DeploymentConfig, ServiceAccount, Role, Service, and Route
 
 metadata:
   annotations:
@@ -34,7 +34,7 @@ parameters:
       Role to assign to bookbag service account. Default, 'basic-user'.
       Ex: admin, edit, view
     required: true
-    value: basic-user
+    value: view
 
 objects:
   - apiVersion: apps.openshift.io/v1
