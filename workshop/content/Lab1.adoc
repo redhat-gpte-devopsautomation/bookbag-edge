@@ -35,7 +35,7 @@ image:images/RedHatOpenShiftDashboard.png[/workshop/images/RedHatOpenShiftDashbo
 . Upon clicking the *Launcher Icon* you will see another login screen.
 Click the *Log in with OpenShift* icon.
 +
-image:/workshop/images/loginwithopenshift.png[/workshop/images/loginwithopenshift]
+image:images/loginwithopenshift.png[/workshop/images/loginwithopenshift]
 . Log in with your credentials.
 +
 image:/workshop/images/workshop_attendees.png[/workshop/images/workshop_attendees]
