@@ -1,8 +1,5 @@
 ---
 modules:
-  Intro:
-    name: Introduction
-    exit_sign: Continue
   Login:
     name: Log Into OpenShift
     exit_sign: Continue

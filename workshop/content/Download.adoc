@@ -1,3 +1,3 @@
 == Open the workshop doc
 
-[Workshop Document](workshop/content/workshop-instructions.pdf)
+workshop/content/workshop-instructions.pdf[Workshop Instructions]

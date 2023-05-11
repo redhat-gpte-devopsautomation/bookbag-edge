@@ -2,7 +2,6 @@
 name: Bookbag Template
 modules:
   activate:
-    - Intro
     - Login
     - Download
     # - Jupyter
