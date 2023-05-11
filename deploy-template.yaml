@@ -39,7 +39,7 @@ parameters:
     Role to assign to bookbag service account. Default, 'basic-user'.
     Ex: admin, edit, view
   required: true
-  value: edit
+  value: view
 
 objects:
 - apiVersion: apps.openshift.io/v1
