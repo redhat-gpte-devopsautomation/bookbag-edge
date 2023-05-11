@@ -72,7 +72,9 @@ by selecting it and clicking on the run button.
 +
 image:/workshop/images/run_cells.png[/workshop/images/run_cells]
 . Next, in the following cell, replace *None* with number associated with your 
-user (%user%) - the `GROUP_ID` number.
+user.
++
+[%user%] - update `GROUP_ID`
 +
 image:/workshop/images/group_id.png[/workshop/images/group_id]
 . Afterwards, select and run cells 3-7 to generate synthetic data from a
