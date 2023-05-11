@@ -55,7 +55,7 @@ objects:
           imageChangeParams:
             automatic: true
             containerNames:
-              - terminal
+              - workshop
             from:
               kind: ImageStreamTag
               name: ${IMAGE_STREAM_NAME}:latest

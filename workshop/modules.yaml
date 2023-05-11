@@ -3,7 +3,7 @@ modules:
   Login:
     name: Log Into OpenShift
     exit_sign: Continue
-  Download:
+  PDF:
     name: Open Instructions
   # Jupyter:
   #   name: Start Using Jupyter on RHODS

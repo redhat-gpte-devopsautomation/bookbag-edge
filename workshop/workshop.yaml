@@ -3,7 +3,7 @@ name: AI/ML Intelligent Applications for the Edge
 modules:
   activate:
     - Login
-    - Download
+    - PDF
     # - Jupyter
     # - Lab1
     # - Lab2

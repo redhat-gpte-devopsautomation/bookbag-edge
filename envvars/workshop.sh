@@ -2,4 +2,4 @@
 
 # Environment variables to set for the workshop
 
-WORKSHOP_ONLY=true
+# WORKSHOP_ONLY=true
