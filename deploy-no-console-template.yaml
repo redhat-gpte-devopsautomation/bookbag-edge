@@ -70,7 +70,7 @@ objects:
           restartPolicy: Always
           serviceAccountName: ${NAME}
           containers:
-            - name: terminal
+            - name: workshop
               env:
                 - name: APPLICATION_NAME
                   value: ${NAME}
