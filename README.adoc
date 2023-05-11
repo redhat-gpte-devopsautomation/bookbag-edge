@@ -13,7 +13,7 @@ be used in Bookbag environments.
 
 == Using this Template
 
-Instructions on how to use this Template are describe in [https://github.com/redhat-gpte-labs/bookbag-demo
+Instructions on how to use this Template are describe in [https://github.com/redhat-gpte-labs/bookbag-demo]
 
 In short, the steps are:
 

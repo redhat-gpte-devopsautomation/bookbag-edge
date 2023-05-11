@@ -2,8 +2,10 @@
 name: Bookbag Template
 modules:
   activate:
-    - overview
+    - Intro
+    - Login
+    - Jupyter
     - Lab1
     - Lab2
     - Lab3
-    - review
+    - Review
