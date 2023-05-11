@@ -58,11 +58,12 @@ image:/workshop/images/git_clone.png[/workshop/images/git_clone]
 ....
 https://github.com/Enterprise-Neurosystem/edge-synthetic-data-generator.git
 ....
-+
+
 === Generate Sensor Data
+
 . Now that we’ve cloned the project, let’s generate synthetic sensor
 data from a notebook.
-. Open the notebook named `12_generate_sensor_data.ipynb` from the File
+. Open the notebook named `12-generate-sensor-data.ipynb` from the File
 Explorer tab.
 +
 image:/workshop/images/generate_sensor_data.png[/workshop/images/generate_sensor_data]

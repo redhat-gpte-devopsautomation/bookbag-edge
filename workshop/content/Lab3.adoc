@@ -124,7 +124,7 @@ instructions for link:#streaming-sensor-data[streaming sensor data].
 https://github.com/Enterprise-Neurosystem/edge-synthetic-data-generator/blob/main/workshop/instructions.md[generating
 sensor data].
 . In the same Jupyter notebook referenced in the above instructions,
-`12_generate_sensor_data.ipynb`, go down to the section title *Streaming
+`12-generate-sensor-data.ipynb`, go down to the section title *Streaming
 our sensor data*. Let’s attach a fake timestamp to each instance of
 synthetic data, making it time series data, by running the first four
 cells in this section.
