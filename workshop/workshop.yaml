@@ -4,8 +4,9 @@ modules:
   activate:
     - Intro
     - Login
-    - Jupyter
-    - Lab1
-    - Lab2
-    - Lab3
-    - review
+    - Download
+    # - Jupyter
+    # - Lab1
+    # - Lab2
+    # - Lab3
+    # - review
