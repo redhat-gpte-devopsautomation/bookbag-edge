@@ -31,7 +31,7 @@ containerized applications. Part of this environment is the Red Hat
 OpenShift Data Science platform. It is accessed by *clicking* the
 *launcher* icon in the upper right corner.
 +
-image:/workshop/images/RedHatOpenShiftDashboard.png[/workshop/images/RedHatOpenShiftDashboard]
+image:images/RedHatOpenShiftDashboard.png[/workshop/images/RedHatOpenShiftDashboard]
 . Upon clicking the *Launcher Icon* you will see another login screen.
 Click the *Log in with OpenShift* icon.
 +
