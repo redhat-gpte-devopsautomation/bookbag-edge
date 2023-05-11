@@ -14,6 +14,25 @@ Table of Contents
 Model]
 * link:#streaming-sensor-data[Streaming Sensor Data]
 
+=== Git Clone the Edge Synthetic Generator Project
+
+[arabic]
+. On the left side of the navigation pane, locate the explorer panel.
+This panel is where you can create and manage your project directories.
+Go into the root directory of your JupyterLab enviroment by locating
+clicking the Folder icon.
++
+image:/workshop/images/directory.png[/workshop/images/directory]
+. Click on the Git icon on the left of your JupyterHub notebook.
+. Click on the *Clone a Repository* button.
++
+image:/workshop/images/git_clone.png[/workshop/images/git_clone]
+. Paste the following URL and click *Clone*.
++
+....
+https://github.com/Enterprise-Neurosystem/edge-anomaly-detection.git
+....
+
 === Preparing the Data
 
 [arabic]
